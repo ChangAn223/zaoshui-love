@@ -14,6 +14,9 @@ const noTexts = [
     "不行:("
 ];
 
+const nameParam = new URLSearchParams(window.location.search).get('name') || '宝贝'
+questionText.textContent = `${nameParam }，可以成为我的恋人吗？`
+
 // No 按钮点击事件
 noButton.addEventListener("click", function() {
     clickCount++;
